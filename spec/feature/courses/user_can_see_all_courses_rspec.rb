@@ -15,7 +15,7 @@ RSpec.describe "User can see all courses" do
     student_2_course = student_2.courses.create(name: "History of Magic")
 
     visit "/courses"
-
+    
     expect(page).to have_content(student_1_course.name)
     expect(page).to have_content(2)
 
